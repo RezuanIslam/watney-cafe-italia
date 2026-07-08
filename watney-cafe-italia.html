@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<!-- ============================================================
+     WATNEY CAFÉ ITALIA — Production single-file website
+     Retail Grocery Store + Italian Café, 16 Tarling Street, London E1 0AD
+     ============================================================ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============ SEO: META ============ -->
+<title>Watney Café Italia | Italian Coffee Shop &amp; Grocery Store in London E1</title>
+<meta name="description" content="Watney Café Italia on Tarling Street, London E1 — a family-run Italian café and grocery store serving fresh espresso, bakery, sandwiches and everyday groceries, 8am–11pm every day.">
+<meta name="keywords" content="Coffee Shop London, Italian Café London, Fresh Coffee London, Coffee and Bakery London, Convenience Store London, Grocery Shop London, Café Near Me, Watney Café Italia, Tarling Street E1">
+<meta name="author" content="Watney Café Italia">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.watneycafeitalia.co.uk/">
+
+<!-- ============ Open Graph ============ -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Watney Café Italia | Italian Coffee Shop &amp; Grocery Store in London E1">
+<meta property="og:description" content="Fresh Italian espresso, bakery and everyday groceries on Tarling Street, London E1. Open every day, 8am–11pm.">
+<meta property="og:url" content="https://www.watneycafeitalia.co.uk/">
+<meta property="og:image" content="https://www.watneycafeitalia.co.uk/assets/og-cover.jpg">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Watney Café Italia">
+
+<!-- ============ Twitter Card ============ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Watney Café Italia | Italian Coffee Shop &amp; Grocery Store in London E1">
+<meta name="twitter:description" content="Fresh Italian espresso, bakery and everyday groceries on Tarling Street, London E1. Open every day, 8am–11pm.">
+<meta name="twitter:image" content="https://www.watneycafeitalia.co.uk/assets/og-cover.jpg">
+
+<!-- ============ JSON-LD: LocalBusiness ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Watney Café Italia",
+  "image": "https://www.watneycafeitalia.co.uk/assets/og-cover.jpg",
+  "@id": "https://www.watneycafeitalia.co.uk/",
+  "url": "https://www.watneycafeitalia.co.uk/",
+  "telephone": "+44 7387 190391",
+  "email": "watneycaffeitalia@yahoo.com",
+  "priceRange": "££",
+  "servesCuisine": ["Italian", "Café", "Bakery"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "16 Tarling Street",
+    "addressLocality": "London",
+    "postalCode": "E1 0AD",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.5121,
+    "longitude": -0.0538
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "08:00",
+      "closes": "23:00"
+    }
+  ],
+  "sameAs": []
+}
+</script>
+
+<!-- ============ Fonts ============ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+<!-- ============ robots.txt (reference copy) ============
+User-agent: *
+Allow: /
+Sitemap: https://www.watneycafeitalia.co.uk/sitemap.xml
+============================================================= -->
+
+<!-- ============ sitemap.xml (reference copy) ============
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.watneycafeitalia.co.uk/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.watneycafeitalia.co.uk/#shop</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.watneycafeitalia.co.uk/#menu</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.watneycafeitalia.co.uk/#gallery</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.watneycafeitalia.co.uk/#blog</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.watneycafeitalia.co.uk/#careers</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.watneycafeitalia.co.uk/#faq</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.watneycafeitalia.co.uk/#contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+</urlset>
+============================================================= -->
+
+<style>
+/* ==========================================================================
+   0. DESIGN TOKENS
+   ========================================================================== */
+:root{
+  --green-900:#0c2318;
+  --green:#123524;
+  --green-700:#1a4a33;
+  --gold:#C9A227;
+  --gold-light:#e0c463;
+  --white:#FFFFFF;
+  --cream:#F8F6F2;
+  --charcoal:#1F1F1F;
+  --coffee:#6F4E37;
+
+  --bg:var(--cream);
+  --bg-elevated:var(--white);
+  --text:var(--charcoal);
+  --text-muted:#5a5751;
+  --border:rgba(31,31,31,0.08);
+  --glass-bg:rgba(255,255,255,0.65);
+  --glass-border:rgba(255,255,255,0.4);
+  --shadow-soft:0 10px 30px rgba(18,53,36,0.08);
+  --shadow-lift:0 20px 50px rgba(18,53,36,0.16);
+
+  --font-display:'Playfair Display', Georgia, serif;
+  --font-body:'Poppins', -apple-system, sans-serif;
+  --font-nav:'Montserrat', -apple-system, sans-serif;
+
+  --radius-sm:10px;
+  --radius-md:18px;
+  --radius-lg:28px;
+  --container:1240px;
+  --nav-h:82px;
+}
+
+[data-theme="dark"]{
+  --bg:#12130f;
+  --bg-elevated:#1a1c16;
+  --text:#f2efe8;
+  --text-muted:#b8b4a9;
+  --border:rgba(255,255,255,0.08);
+  --glass-bg:rgba(18,19,15,0.6);
+  --glass-border:rgba(255,255,255,0.08);
+  --shadow-soft:0 10px 30px rgba(0,0,0,0.35);
+  --shadow-lift:0 20px 50px rgba(0,0,0,0.5);
+}
+
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important;}
+}
+body{
+  margin:0;
+  font-family:var(--font-body);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  transition:background 0.4s ease, color 0.4s ease;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+ul{list-style:none;margin:0;padding:0;}
+h1,h2,h3,h4{font-family:var(--font-display);margin:0 0 .5em;line-height:1.15;font-weight:700;}
+p{margin:0 0 1em;}
+.container{max-width:var(--container);margin:0 auto;padding:0 clamp(20px,5vw,48px);}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px;}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+.skip-link{position:fixed;top:-60px;left:12px;background:var(--gold);color:var(--green-900);padding:12px 20px;border-radius:8px;z-index:10000;font-weight:600;transition:top .2s;}
+.skip-link:focus{top:12px;}
+
+.eyebrow{
+  font-family:var(--font-nav);font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gold);display:inline-flex;align-items:center;gap:10px;margin-bottom:14px;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold);display:inline-block;}
+.section{padding:clamp(64px,10vw,120px) 0;position:relative;}
+.section-head{max-width:640px;margin-bottom:56px;}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+.section-head h2{font-size:clamp(2rem,4vw,3rem);}
+.section-head p{color:var(--text-muted);font-size:1.05rem;}
+.section-alt{background:var(--bg-elevated);}
+
+.btn{
+  font-family:var(--font-nav);font-weight:600;font-size:.85rem;letter-spacing:.05em;text-transform:uppercase;
+  padding:16px 34px;border-radius:100px;border:1px solid transparent;display:inline-flex;align-items:center;gap:10px;
+  transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s, background .3s, color .3s, border-color .3s;
+  cursor:pointer;white-space:nowrap;
+}
+.btn-primary{background:var(--gold);color:var(--green-900);box-shadow:0 10px 24px rgba(201,162,39,.35);}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 16px 32px rgba(201,162,39,.45);}
+.btn-outline{background:transparent;color:var(--white);border-color:rgba(255,255,255,.5);}
+.btn-outline:hover{background:rgba(255,255,255,.12);transform:translateY(-3px);}
+.btn-ghost{background:transparent;color:var(--green);border-color:var(--green);}
+[data-theme="dark"] .btn-ghost{color:var(--gold-light);border-color:var(--gold-light);}
+.btn-ghost:hover{background:var(--green);color:var(--white);}
+.btn-sm{padding:10px 20px;font-size:.72rem;}
+
+/* ==========================================================================
+   1. LOADING SCREEN
+   ========================================================================== */
+#loader{
+  position:fixed;inset:0;background:var(--green-900);z-index:99999;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;
+  transition:opacity .6s ease, visibility .6s ease;
+}
+#loader.hidden{opacity:0;visibility:hidden;}
+.loader-mark{position:relative;width:64px;height:64px;}
+.loader-mark svg{width:100%;height:100%;}
+.loader-ring{fill:none;stroke:var(--gold);stroke-width:2.5;stroke-dasharray:180;stroke-dashoffset:180;animation:pour 1.4s ease-in-out infinite;}
+@keyframes pour{
+  0%{stroke-dashoffset:180;}
+  50%{stroke-dashoffset:0;}
+  100%{stroke-dashoffset:-180;}
+}
+.loader-text{font-family:var(--font-nav);letter-spacing:.3em;font-size:.7rem;color:var(--cream);text-transform:uppercase;}
+
+/* ==========================================================================
+   2. NAVBAR
+   ========================================================================== */
+.navbar{
+  position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--nav-h);
+  display:flex;align-items:center;
+  background:var(--glass-bg);backdrop-filter:blur(16px) saturate(160%);-webkit-backdrop-filter:blur(16px) saturate(160%);
+  border-bottom:1px solid var(--glass-border);
+  transition:background .4s ease, box-shadow .4s ease, height .3s ease;
+}
+.navbar.scrolled{box-shadow:0 8px 30px rgba(0,0,0,.08);height:68px;}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%;}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:1.28rem;color:var(--text);}
+.logo .coffee-icon{width:30px;height:30px;color:var(--gold);flex-shrink:0;}
+.logo .logo-sub{display:block;font-family:var(--font-nav);font-size:.55rem;letter-spacing:.25em;font-weight:600;color:var(--gold);text-transform:uppercase;margin-top:-2px;}
+.nav-links{display:flex;align-items:center;gap:2px;}
+.nav-links a{
+  font-family:var(--font-nav);font-size:.78rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  padding:10px 16px;border-radius:100px;color:var(--text);position:relative;transition:color .25s, background .25s;
+}
+.nav-links a:hover, .nav-links a.active{background:var(--green);color:var(--white);}
+[data-theme="dark"] .nav-links a:hover, [data-theme="dark"] .nav-links a.active{background:var(--gold);color:var(--green-900);}
+.nav-actions{display:flex;align-items:center;gap:10px;}
+.icon-btn{
+  width:42px;height:42px;border-radius:50%;border:1px solid var(--border);background:transparent;
+  display:flex;align-items:center;justify-content:center;color:var(--text);transition:background .25s, transform .25s;
+}
+.icon-btn:hover{background:var(--gold);color:var(--green-900);transform:translateY(-2px);border-color:var(--gold);}
+.icon-btn svg{width:19px;height:19px;}
+.nav-toggle{display:none;}
+
+@media (max-width: 980px){
+  .nav-links{
+    position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;background:var(--bg);
+    flex-direction:column;align-items:stretch;padding:24px;gap:6px;transform:translateX(100%);transition:transform .4s cubic-bezier(.2,.8,.2,1);
+    overflow-y:auto;
+  }
+  .nav-links.open{transform:translateX(0);}
+  .nav-links a{padding:16px 18px;font-size:.95rem;border-bottom:1px solid var(--border);border-radius:0;}
+  .nav-toggle{display:flex;}
+}
+
+/* ==========================================================================
+   3. HERO
+   ========================================================================== */
+.hero{
+  min-height:100svh;position:relative;display:flex;align-items:flex-end;
+  color:var(--white);overflow:hidden;
+}
+.hero-media{position:absolute;inset:0;z-index:0;}
+.hero-media img{width:100%;height:100%;object-fit:cover;}
+.hero-media::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg, rgba(12,35,24,.55) 0%, rgba(12,35,24,.35) 40%, rgba(12,35,24,.92) 100%);
+}
+.hero-content{position:relative;z-index:1;padding-bottom:clamp(60px,9vw,110px);width:100%;}
+.hero-eyebrow{font-family:var(--font-nav);letter-spacing:.3em;font-size:.75rem;text-transform:uppercase;color:var(--gold-light);margin-bottom:22px;display:flex;align-items:center;gap:12px;}
+.hero-eyebrow::before{content:"";width:34px;height:1px;background:var(--gold-light);}
+.hero h1{font-size:clamp(2.6rem,6.2vw,5.4rem);max-width:14ch;font-weight:700;color:var(--white);}
+.hero h1 em{font-style:italic;color:var(--gold-light);}
+.hero-sub{max-width:520px;font-size:1.12rem;color:rgba(255,255,255,.85);margin-bottom:36px;}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:56px;}
+.hero-stats{display:flex;gap:clamp(28px,6vw,64px);flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.2);padding-top:32px;}
+.stat .num{font-family:var(--font-display);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;color:var(--gold-light);}
+.stat .label{font-family:var(--font-nav);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7);}
+.scroll-cue{position:absolute;right:clamp(20px,5vw,48px);bottom:40px;z-index:1;writing-mode:vertical-rl;display:flex;align-items:center;gap:14px;color:rgba(255,255,255,.7);font-family:var(--font-nav);font-size:.68rem;letter-spacing:.25em;text-transform:uppercase;}
+.scroll-cue .line{width:1px;height:60px;background:linear-gradient(rgba(255,255,255,.7),transparent);animation:scrollLine 2s ease-in-out infinite;}
+@keyframes scrollLine{0%,100%{transform:scaleY(1);opacity:.7;}50%{transform:scaleY(.55);opacity:.3;}}
+
+/* ==========================================================================
+   4. SCROLL REVEAL
+   ========================================================================== */
+.reveal{opacity:0;transform:translateY(36px);transition:opacity .8s cubic-bezier(.2,.7,.3,1), transform .8s cubic-bezier(.2,.7,.3,1);}
+.reveal.in{opacity:1;transform:translateY(0);}
+.reveal-stagger > *{opacity:0;transform:translateY(30px);transition:opacity .7s ease, transform .7s ease;}
+.reveal-stagger.in > *{opacity:1;transform:translateY(0);}
+.reveal-stagger.in > *:nth-child(1){transition-delay:.05s;}
+.reveal-stagger.in > *:nth-child(2){transition-delay:.13s;}
+.reveal-stagger.in > *:nth-child(3){transition-delay:.21s;}
+.reveal-stagger.in > *:nth-child(4){transition-delay:.29s;}
+.reveal-stagger.in > *:nth-child(5){transition-delay:.37s;}
+.reveal-stagger.in > *:nth-child(6){transition-delay:.45s;}
+.reveal-stagger.in > *:nth-child(7){transition-delay:.53s;}
+.reveal-stagger.in > *:nth-child(8){transition-delay:.61s;}
+
+/* ==========================================================================
+   5. ABOUT
+   ========================================================================== */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,6vw,80px);align-items:center;}
+.about-media{position:relative;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lift);aspect-ratio:4/5;}
+.about-media img{width:100%;height:100%;object-fit:cover;}
+.about-badge{
+  position:absolute;bottom:-24px;right:-24px;background:var(--gold);color:var(--green-900);
+  width:130px;height:130px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;font-family:var(--font-display);box-shadow:var(--shadow-lift);
+}
+.about-badge .n{font-size:1.8rem;font-weight:800;}
+.about-badge .t{font-family:var(--font-nav);font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;}
+.about-copy p{color:var(--text-muted);font-size:1.05rem;}
+.about-list{display:grid;gap:16px;margin:28px 0 34px;}
+.about-list li{display:flex;gap:14px;align-items:flex-start;font-weight:500;}
+.about-list svg{width:22px;height:22px;color:var(--gold);flex-shrink:0;margin-top:2px;}
+
+/* ==========================================================================
+   6. STATS / WHY CHOOSE US
+   ========================================================================== */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+.why-card{
+  background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-md);
+  padding:34px 26px;transition:transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s;
+}
+.why-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lift);}
+.why-card .icon-wrap{width:56px;height:56px;border-radius:16px;background:linear-gradient(135deg,var(--green),var(--green-700));display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
+.why-card .icon-wrap svg{width:26px;height:26px;color:var(--gold-light);}
+.why-card h3{font-size:1.15rem;}
+.why-card p{color:var(--text-muted);font-size:.92rem;margin:0;}
+
+.counters{
+  margin-top:64px;background:var(--green);border-radius:var(--radius-lg);padding:clamp(36px,5vw,56px);
+  display:grid;grid-template-columns:repeat(4,1fr);gap:24px;color:var(--white);position:relative;overflow:hidden;
+}
+.counters::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%, rgba(201,162,39,.18), transparent 55%);}
+.counter-item{text-align:center;position:relative;}
+.counter-item .count{font-family:var(--font-display);font-size:clamp(2.2rem,4vw,3.2rem);font-weight:800;color:var(--gold-light);}
+.counter-item .clabel{font-family:var(--font-nav);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75);}
+
+/* ==========================================================================
+   7. CATEGORY / MENU CARDS
+   ========================================================================== */
+.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.cat-card{
+  position:relative;border-radius:var(--radius-md);overflow:hidden;aspect-ratio:1/1.05;
+  box-shadow:var(--shadow-soft);transition:transform .5s cubic-bezier(.2,.8,.2,1), box-shadow .5s;
+}
+.cat-card:hover{transform:translateY(-8px) scale(1.01);box-shadow:var(--shadow-lift);}
+.cat-card img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease;}
+.cat-card:hover img{transform:scale(1.08);}
+.cat-card::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,35,24,.85) 0%,rgba(12,35,24,.05) 55%);}
+.cat-card .cat-label{position:absolute;left:18px;bottom:16px;right:18px;z-index:1;color:var(--white);font-family:var(--font-display);font-size:1.15rem;font-weight:700;}
+.cat-card .cat-count{position:relative;z-index:1;display:block;font-family:var(--font-nav);font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-light);margin-top:2px;}
+
+.menu-tabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:40px;}
+.tab-btn{
+  font-family:var(--font-nav);font-size:.78rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;
+  padding:11px 22px;border-radius:100px;border:1px solid var(--border);background:var(--bg-elevated);color:var(--text);
+  transition:all .3s;
+}
+.tab-btn:hover{border-color:var(--gold);}
+.tab-btn.active{background:var(--green);color:var(--white);border-color:var(--green);}
+
+.menu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.menu-card{
+  background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;
+  transition:transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s;
+}
+.menu-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lift);}
+.menu-card .thumb{aspect-ratio:4/3;overflow:hidden;position:relative;}
+.menu-card .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+.menu-card:hover .thumb img{transform:scale(1.07);}
+.menu-card .body{padding:20px 22px 24px;}
+.menu-card .row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;}
+.menu-card h4{font-size:1.05rem;margin-bottom:6px;}
+.menu-card .price{font-family:var(--font-nav);font-weight:700;color:var(--gold);white-space:nowrap;}
+.menu-card p{color:var(--text-muted);font-size:.88rem;margin:0;}
+.badge-tag{display:inline-block;font-family:var(--font-nav);font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;background:var(--cream);color:var(--coffee);padding:4px 10px;border-radius:100px;position:absolute;top:12px;left:12px;z-index:1;}
+[data-theme="dark"] .badge-tag{background:var(--green-900);color:var(--gold-light);}
+
+/* ==========================================================================
+   8. TESTIMONIALS
+   ========================================================================== */
+.testi-track{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.testi-card{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-md);padding:32px;position:relative;}
+.testi-card .quote-mark{font-family:var(--font-display);font-size:3.4rem;color:var(--gold);opacity:.5;line-height:1;margin-bottom:6px;}
+.testi-card p{color:var(--text-muted);font-size:.98rem;}
+.testi-stars{color:var(--gold);letter-spacing:2px;margin-bottom:10px;}
+.testi-person{display:flex;align-items:center;gap:12px;margin-top:18px;}
+.testi-person img{width:46px;height:46px;border-radius:50%;object-fit:cover;}
+.testi-person .name{font-weight:600;font-size:.9rem;}
+.testi-person .role{font-size:.78rem;color:var(--text-muted);}
+
+/* ==========================================================================
+   9. GALLERY / MASONRY
+   ========================================================================== */
+.gallery-filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:34px;}
+.masonry{columns:4 220px;column-gap:18px;}
+.masonry-item{break-inside:avoid;margin-bottom:18px;border-radius:var(--radius-md);overflow:hidden;position:relative;cursor:zoom-in;box-shadow:var(--shadow-soft);}
+.masonry-item img{width:100%;display:block;transition:transform .6s ease;}
+.masonry-item:hover img{transform:scale(1.06);}
+.masonry-item .mi-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,35,24,.75),transparent 50%);opacity:0;transition:opacity .35s;display:flex;align-items:flex-end;padding:16px;}
+.masonry-item:hover .mi-overlay{opacity:1;}
+.mi-overlay span{color:var(--white);font-family:var(--font-nav);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;}
+
+.lightbox{position:fixed;inset:0;background:rgba(8,12,9,.94);z-index:5000;display:none;align-items:center;justify-content:center;padding:40px;}
+.lightbox.open{display:flex;}
+.lightbox img{max-width:min(90vw,900px);max-height:82vh;border-radius:12px;object-fit:contain;}
+.lightbox-close{position:absolute;top:28px;right:32px;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff;display:flex;align-items:center;justify-content:center;}
+.lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff;display:flex;align-items:center;justify-content:center;}
+.lb-prev{left:24px;}
+.lb-next{right:24px;}
+
+/* ==========================================================================
+   10. OFFERS / NEWSLETTER / INSTAGRAM
+   ========================================================================== */
+.offers-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;}
+.offer-card{
+  border-radius:var(--radius-lg);padding:44px;position:relative;overflow:hidden;color:var(--white);min-height:260px;
+  display:flex;flex-direction:column;justify-content:flex-end;
+}
+.offer-card.big{background:linear-gradient(135deg,var(--green-900),var(--green));}
+.offer-card.small{background:linear-gradient(135deg,var(--coffee),#4b3527);}
+.offer-card::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 90% -10%, rgba(201,162,39,.35), transparent 60%);}
+.offer-tag{position:relative;font-family:var(--font-nav);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-light);margin-bottom:10px;}
+.offer-card h3{position:relative;font-size:clamp(1.5rem,2.6vw,2.1rem);max-width:16ch;}
+.offer-card p{position:relative;color:rgba(255,255,255,.8);max-width:34ch;}
+
+.newsletter{
+  margin-top:80px;background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-lg);
+  padding:clamp(36px,6vw,64px);display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;
+}
+.newsletter h3{font-size:1.7rem;max-width:16ch;margin-bottom:8px;}
+.newsletter p{color:var(--text-muted);margin:0;}
+.newsletter-form{display:flex;gap:10px;flex:1;min-width:280px;max-width:440px;}
+.newsletter-form input{
+  flex:1;padding:15px 20px;border-radius:100px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-family:var(--font-body);
+}
+.newsletter-form input:focus{border-color:var(--gold);}
+
+.insta-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;}
+.insta-item{aspect-ratio:1/1;border-radius:14px;overflow:hidden;position:relative;}
+.insta-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s;}
+.insta-item:hover img{transform:scale(1.08);}
+.insta-item::after{content:"◆ @watneycafeitalia";position:absolute;inset:0;background:rgba(12,35,24,.6);color:#fff;opacity:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-nav);font-size:.6rem;letter-spacing:.08em;transition:opacity .3s;text-align:center;padding:8px;}
+.insta-item:hover::after{opacity:1;}
+
+/* ==========================================================================
+   11. SHOP
+   ========================================================================== */
+.shop-toolbar{display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:36px;}
+.search-wrap{position:relative;flex:1;min-width:240px;max-width:420px;}
+.search-wrap input{
+  width:100%;padding:14px 20px 14px 46px;border-radius:100px;border:1px solid var(--border);background:var(--bg-elevated);color:var(--text);font-family:var(--font-body);
+}
+.search-wrap svg{position:absolute;left:18px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--text-muted);}
+.chip-row{display:flex;gap:8px;flex-wrap:wrap;}
+.chip{
+  font-family:var(--font-nav);font-size:.72rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  padding:9px 18px;border-radius:100px;border:1px solid var(--border);background:var(--bg-elevated);transition:all .25s;
+}
+.chip.active,.chip:hover{background:var(--green);color:var(--white);border-color:var(--green);}
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.product-card{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;transition:transform .4s, box-shadow .4s;}
+.product-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lift);}
+.product-card .thumb{aspect-ratio:1/1;position:relative;overflow:hidden;}
+.product-card .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .6s;}
+.product-card:hover .thumb img{transform:scale(1.07);}
+.product-card .body{padding:18px 20px 22px;}
+.product-cat{font-family:var(--font-nav);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);font-weight:700;}
+.product-card h4{font-size:1rem;margin:6px 0;}
+.product-card p{font-size:.85rem;color:var(--text-muted);margin:0 0 12px;}
+.product-price{font-family:var(--font-nav);font-weight:700;color:var(--text);}
+.no-results{grid-column:1/-1;text-align:center;padding:60px 20px;color:var(--text-muted);}
+
+/* ==========================================================================
+   12. BLOG
+   ========================================================================== */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.blog-card{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;transition:transform .4s,box-shadow .4s;}
+.blog-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lift);}
+.blog-card .thumb{aspect-ratio:16/10;overflow:hidden;}
+.blog-card .thumb img{width:100%;height:100%;object-fit:cover;transition:transform .6s;}
+.blog-card:hover .thumb img{transform:scale(1.06);}
+.blog-card .body{padding:24px 24px 28px;}
+.blog-meta{font-family:var(--font-nav);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:10px;}
+.blog-card h3{font-size:1.2rem;}
+.blog-card p{color:var(--text-muted);font-size:.92rem;}
+.blog-link{font-family:var(--font-nav);font-size:.75rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--green);display:inline-flex;align-items:center;gap:6px;}
+[data-theme="dark"] .blog-link{color:var(--gold-light);}
+
+/* ==========================================================================
+   13. CAREERS
+   ========================================================================== */
+.jobs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-bottom:64px;}
+.job-card{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-md);padding:28px 30px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;transition:transform .35s, box-shadow .35s;}
+.job-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-soft);}
+.job-card h3{font-size:1.15rem;margin-bottom:6px;}
+.job-meta{font-size:.85rem;color:var(--text-muted);}
+.job-meta span{margin-right:12px;}
+
+.form-card{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-lg);padding:clamp(28px,5vw,48px);max-width:760px;margin:0 auto;}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.form-grid.full,.form-field.full{grid-column:1/-1;}
+.form-field{display:flex;flex-direction:column;gap:8px;}
+.form-field label{font-family:var(--font-nav);font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted);}
+.form-field input,.form-field select,.form-field textarea{
+  padding:13px 16px;border-radius:12px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:.95rem;
+}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--gold);}
+.form-field textarea{resize:vertical;min-height:120px;}
+.form-note{font-size:.8rem;color:var(--text-muted);margin-top:16px;}
+.form-status{margin-top:16px;font-size:.9rem;font-weight:600;display:none;}
+.form-status.show{display:block;}
+
+/* ==========================================================================
+   14. FAQ
+   ========================================================================== */
+.faq-list{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:14px;}
+.faq-item{background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;}
+.faq-q{
+  width:100%;text-align:left;background:none;border:none;padding:22px 26px;display:flex;justify-content:space-between;align-items:center;gap:16px;
+  font-family:var(--font-body);font-weight:600;font-size:1rem;color:var(--text);
+}
+.faq-q .plus{width:22px;height:22px;flex-shrink:0;position:relative;}
+.faq-q .plus::before,.faq-q .plus::after{content:"";position:absolute;background:var(--gold);border-radius:2px;}
+.faq-q .plus::before{width:100%;height:2px;top:50%;left:0;transform:translateY(-50%);}
+.faq-q .plus::after{width:2px;height:100%;left:50%;top:0;transform:translateX(-50%);transition:transform .3s;}
+.faq-item.open .faq-q .plus::after{transform:translateX(-50%) rotate(90deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.2,.8,.2,1);}
+.faq-a p{padding:0 26px 24px;color:var(--text-muted);margin:0;font-size:.94rem;}
+
+/* ==========================================================================
+   15. CONTACT
+   ========================================================================== */
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;}
+.contact-info-card{background:var(--green);color:var(--white);border-radius:var(--radius-lg);padding:clamp(30px,5vw,44px);position:relative;overflow:hidden;}
+.contact-info-card::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 90% 0%, rgba(201,162,39,.25), transparent 55%);}
+.contact-row{position:relative;display:flex;gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.15);}
+.contact-row:last-of-type{border-bottom:none;}
+.contact-row svg{width:22px;height:22px;color:var(--gold-light);flex-shrink:0;margin-top:2px;}
+.contact-row .t{font-family:var(--font-nav);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:4px;}
+.contact-row .v{font-weight:500;}
+.map-embed{position:relative;border-radius:var(--radius-md);overflow:hidden;margin-top:24px;aspect-ratio:16/10;background:linear-gradient(135deg,var(--green-700),var(--green-900));display:flex;align-items:center;justify-content:center;}
+.map-embed .pin{display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--gold-light);}
+.map-embed svg{width:36px;height:36px;}
+.map-embed span{font-family:var(--font-nav);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);}
+
+/* ==========================================================================
+   16. FOOTER
+   ========================================================================== */
+.site-footer{background:var(--green-900);color:rgba(255,255,255,.75);padding:80px 0 0;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:56px;border-bottom:1px solid rgba(255,255,255,.1);}
+.footer-logo{display:flex;align-items:center;gap:10px;color:var(--white);font-family:var(--font-display);font-weight:700;font-size:1.3rem;margin-bottom:16px;}
+.footer-logo svg{width:28px;height:28px;color:var(--gold-light);}
+.footer-col h4{font-family:var(--font-nav);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-light);margin-bottom:18px;}
+.footer-col ul{display:flex;flex-direction:column;gap:12px;}
+.footer-col a{font-size:.92rem;transition:color .25s, padding-left .25s;}
+.footer-col a:hover{color:var(--gold-light);padding-left:4px;}
+.footer-social{display:flex;gap:10px;margin-top:18px;}
+.footer-social a{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;}
+.footer-social a:hover{background:var(--gold);border-color:var(--gold);color:var(--green-900);}
+.footer-social svg{width:16px;height:16px;}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding:26px 0;font-size:.8rem;flex-wrap:wrap;gap:10px;}
+.footer-bottom a{opacity:.8;}
+.footer-bottom a:hover{opacity:1;color:var(--gold-light);}
+
+/* ==========================================================================
+   17. FLOATING BUTTONS
+   ========================================================================== */
+.floating-btns{position:fixed;right:24px;bottom:24px;z-index:900;display:flex;flex-direction:column;gap:14px;align-items:flex-end;}
+.fab{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-lift);transition:transform .3s;}
+.fab:hover{transform:translateY(-4px) scale(1.04);}
+.fab-whatsapp{background:#25D366;color:#fff;}
+.fab-whatsapp svg{width:26px;height:26px;}
+.fab-top{background:var(--bg-elevated);border:1px solid var(--border);color:var(--text);width:48px;height:48px;opacity:0;pointer-events:none;transform:translateY(10px);transition:all .3s;}
+.fab-top.show{opacity:1;pointer-events:auto;transform:translateY(0);}
+.fab-top svg{width:20px;height:20px;}
+
+/* ==========================================================================
+   18. BREADCRUMBS / PAGE HEADER (for inner pages)
+   ========================================================================== */
+.page-header{
+  padding:calc(var(--nav-h) + 64px) 0 60px;background:linear-gradient(160deg,var(--green-900),var(--green));color:var(--white);position:relative;overflow:hidden;
+}
+.page-header::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 10%, rgba(201,162,39,.25), transparent 55%);}
+.breadcrumbs{position:relative;font-family:var(--font-nav);font-size:.78rem;letter-spacing:.05em;color:rgba(255,255,255,.65);display:flex;gap:8px;align-items:center;margin-bottom:16px;}
+.breadcrumbs a:hover{color:var(--gold-light);}
+.page-header h1{position:relative;font-size:clamp(2.1rem,4.4vw,3.2rem);color:var(--white);}
+.page-header p{position:relative;color:rgba(255,255,255,.75);max-width:560px;margin:0;}
+
+/* ==========================================================================
+   19. PAGE ROUTING (single-file, section-based "pages")
+   ========================================================================== */
+.page{display:none;}
+.page.active{display:block;}
+#home.page{display:block;}
+#home.page:not(.active){display:none;}
+
+/* ==========================================================================
+   20. RESPONSIVE
+   ========================================================================== */
+@media (max-width: 1100px){
+  .why-grid{grid-template-columns:repeat(2,1fr);}
+  .cat-grid{grid-template-columns:repeat(2,1fr);}
+  .menu-grid{grid-template-columns:repeat(2,1fr);}
+  .testi-track{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .product-grid{grid-template-columns:repeat(2,1fr);}
+  .blog-grid{grid-template-columns:1fr 1fr;}
+  .counters{grid-template-columns:repeat(2,1fr);}
+  .insta-grid{grid-template-columns:repeat(3,1fr);}
+  .offers-grid{grid-template-columns:1fr;}
+  .masonry{columns:3 180px;}
+}
+@media (max-width: 900px){
+  .about-grid{grid-template-columns:1fr;}
+  .contact-grid{grid-template-columns:1fr;}
+  .form-grid{grid-template-columns:1fr;}
+  .jobs-grid{grid-template-columns:1fr;}
+}
+@media (max-width: 640px){
+  .why-grid,.cat-grid,.menu-grid,.product-grid,.blog-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .counters{grid-template-columns:1fr;}
+  .insta-grid{grid-template-columns:repeat(2,1fr);}
+  .masonry{columns:2 160px;}
+  .newsletter{flex-direction:column;align-items:flex-start;}
+  .hero-stats{gap:24px;}
+}
+</style>
+</head>
+<body data-theme="light">
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-mark">
+    <svg viewBox="0 0 64 64"><circle class="loader-ring" cx="32" cy="32" r="28"/></svg>
+  </div>
+  <span class="loader-text">Watney Café Italia</span>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo" data-nav="home" aria-label="Watney Café Italia home">
+      <svg class="coffee-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 3c-.5 1 .5 1.5 0 2.5S7 7 7.5 8" stroke-linecap="round"/><path d="M12 3c-.5 1 .5 1.5 0 2.5S11 7 11.5 8" stroke-linecap="round"/><path d="M3 21h15" stroke-linecap="round"/></svg>
+      <span>Watney Café Italia<span class="logo-sub">London E1</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#about" data-nav="home">About</a>
+      <a href="#shop" data-nav="shop">Shop</a>
+      <a href="#menu" data-nav="menu">Café Menu</a>
+      <a href="#gallery" data-nav="gallery">Gallery</a>
+      <a href="#blog" data-nav="blog">Blog</a>
+      <a href="#testimonials" data-nav="home">Testimonials</a>
+      <a href="#careers" data-nav="careers">Careers</a>
+      <!-- <a href="#faq" data-nav="faq">FAQ</a> -->
+      <a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" aria-pressed="false">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36A5.5 5.5 0 0 1 12 3z"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================================================================
+     PAGE: HOME
+     ================================================================ -->
+<div class="page active" id="home">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home-hero">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1800&q=80" alt="Barista pouring latte art into a cup at Watney Café Italia" loading="eager">
+    </div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow">16 Tarling Street, London E1 0AD</p>
+      <h2>Italian coffee &amp; <em>everyday groceries</em>, made with heart</h2>
+      <p class="hero-sub">A café and grocery store on Tarling Street — fresh espresso, warm bakery and the essentials you need, open every day from 8am to 11pm.</p>
+      <div class="hero-ctas">
+        <a href="#menu" class="btn btn-primary" data-nav="menu">View Café Menu</a>
+        <a href="#shop" class="btn btn-outline" data-nav="shop">Browse the Shop</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="num" data-count="12">0</div><div class="label">Years Serving E1</div></div>
+        <div class="stat"><div class="num" data-count="45">0</div><div class="label">Menu Favourites</div></div>
+        <div class="stat"><div class="num" data-count="6200">0</div><div class="label">Happy Customers</div></div>
+        <div class="stat"><div class="num" data-count="7">0</div><div class="label">Days a Week Open</div></div>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span class="line"></span>Scroll</div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-media reveal">
+        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&w=900&q=80" alt="Warm interior of Watney Café Italia with wooden counters and pastries on display">
+        <div class="about-badge"><span class="n">12+</span><span class="t">Years Local</span></div>
+      </div>
+      <div class="about-copy reveal">
+        <p class="eyebrow">About Us</p>
+        <h2>A little piece of Italy on Tarling Street</h2>
+        <p>Watney Café Italia began as a small grocery counter and grew into a neighbourhood favourite — half Italian café, half everyday store. We roast, bake and stock with the same care, so you can grab your morning espresso and your evening shopping in one warm, welcoming stop.</p>
+        <ul class="about-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Freshly ground Italian espresso, daily</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Grocery essentials, bakery &amp; gifts under one roof</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Open every day, 8am – 11pm</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Family-run, proudly part of the E1 community</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost" data-nav="contact">Visit Us Today</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="section section-alt" id="why">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow" style="justify-content:center">Why Choose Us</p>
+        <h2>Two shops, one warm welcome</h2>
+        <p>Everything we do is built around freshness, friendliness and being genuinely useful to the street we sit on.</p>
+      </div>
+      <div class="why-grid reveal-stagger">
+        <div class="why-card">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/></svg></div>
+          <h3>Genuine Italian Coffee</h3>
+          <p>Slow-roasted beans, pulled fresh on every order — never sitting, never stale.</p>
+        </div>
+        <div class="why-card">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 9l9-6 9 6v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9z"/></svg></div>
+          <h3>Everyday Convenience</h3>
+          <p>Groceries, snacks and essentials stocked for the neighbourhood, not tourists.</p>
+        </div>
+        <div class="why-card">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-4.35-9.5-8.5C.7 8.9 2.4 5 6 5c2 0 3.5 1 4 2.5C10.5 6 12 5 14 5c3.6 0 5.3 3.9 3.5 7.5C19 16.65 12 21 12 21z"/></svg></div>
+          <h3>Community First</h3>
+          <p>Family-run since day one — we know most of our regulars by their order.</p>
+        </div>
+        <div class="why-card">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg></div>
+          <h3>Open Late, Every Day</h3>
+          <p>8am to 11pm, seven days a week — here when you need us.</p>
+        </div>
+      </div>
+
+      <div class="counters reveal">
+        <div class="counter-item"><div class="count" data-count="12">0</div><div class="clabel">Years on Tarling St</div></div>
+        <div class="counter-item"><div class="count" data-count="6200">0</div><div class="clabel">Cups Served Monthly</div></div>
+        <div class="counter-item"><div class="count" data-count="180">0</div><div class="clabel">Grocery Lines Stocked</div></div>
+        <div class="counter-item"><div class="count" data-count="98">0</div><div class="clabel">% Customers Return</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED CATEGORIES ============ -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Shop the Store</p>
+        <h2>Featured grocery categories</h2>
+        <p>From pantry staples to phone chargers — everything you need, close to home.</p>
+      </div>
+      <div class="cat-grid reveal-stagger">
+        <a href="#shop" class="cat-card" data-nav="shop"><img loading="lazy" src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?auto=format&fit=crop&w=500&q=70" alt="Shelves of packaged snacks"><span class="cat-label">Snacks</span><span class="cat-count">18 items</span></a>
+        <a href="#shop" class="cat-card" data-nav="shop"><img loading="lazy" src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=500&q=70" alt="Fresh grocery produce and pantry goods"><span class="cat-label">Groceries</span><span class="cat-count">40 items</span></a>
+        <a href="#shop" class="cat-card" data-nav="shop"><img loading="lazy" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=70" alt="Fresh baked bread and pastries"><span class="cat-label">Bakery</span><span class="cat-count">15 items</span></a>
+        <a href="#shop" class="cat-card" data-nav="shop"><img loading="lazy" src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=70" alt="Bottled and canned cold drinks"><span class="cat-label">Drinks</span><span class="cat-count">22 items</span></a>
+        <a href="#shop" class="cat-card" data-nav="shop"><img loading="lazy" src="https://images.unsplash.com/photo-1585155770447-2f66e2a397b5?auto=format&fit=crop&w=500&q=70" alt="Small electronics accessories on a shelf"><span class="cat-label">Electronics</span><span class="cat-count">9 items</span></a>
+        <a href="#shop" class="cat-card" data-nav="shop"><img loading="lazy" src="https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?auto=format&fit=crop&w=500&q=70" alt="Mobile phone accessories and chargers"><span class="cat-label">Mobile Accessories</span><span class="cat-count">14 items</span></a>
+        <a href="#shop" class="cat-card" data-nav="shop"><img loading="lazy" src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=500&q=70" alt="Wrapped gift items on display"><span class="cat-label">Gift Items</span><span class="cat-count">11 items</span></a>
+        <a href="#shop" class="cat-card" data-nav="shop"><img loading="lazy" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=500&q=70" alt="Bags of fresh roasted coffee beans"><span class="cat-label">Coffee Beans</span><span class="cat-count">8 items</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POPULAR CAFÉ MENU ============ -->
+  <section class="section section-alt" id="popular-menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">From the Café</p>
+        <h2>Popular this week</h2>
+        <p>Our most-ordered coffees and bites — pulled, baked and built to order.</p>
+      </div>
+      <div class="menu-grid reveal-stagger">
+        <div class="menu-card">
+          <div class="thumb"><span class="badge-tag">Bestseller</span><img loading="lazy" src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=500&q=70" alt="Cappuccino with latte art in a white cup"></div>
+          <div class="body"><div class="row"><h4>Cappuccino</h4><span class="price">£3.20</span></div><p>Double espresso, steamed milk, silky microfoam.</p></div>
+        </div>
+        <div class="menu-card">
+          <div class="thumb"><img loading="lazy" src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=500&q=70" alt="Single shot of espresso in a small cup"></div>
+          <div class="body"><div class="row"><h4>Espresso</h4><span class="price">£2.40</span></div><p>Rich, intense, pulled to order — the Italian classic.</p></div>
+        </div>
+        <div class="menu-card">
+          <div class="thumb"><img loading="lazy" src="https://images.unsplash.com/photo-1561047029-3000c68339ca?auto=format&fit=crop&w=500&q=70" alt="Latte with heart-shaped latte art"></div>
+          <div class="body"><div class="row"><h4>Latte</h4><span class="price">£3.40</span></div><p>Smooth and creamy, our most-loved everyday coffee.</p></div>
+        </div>
+        <div class="menu-card">
+          <div class="thumb"><img loading="lazy" src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=500&q=70" alt="Mocha coffee topped with cream"></div>
+          <div class="body"><div class="row"><h4>Mocha</h4><span class="price">£3.60</span></div><p>Espresso, steamed milk and Italian dark chocolate.</p></div>
+        </div>
+        <div class="menu-card">
+          <div class="thumb"><img loading="lazy" src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=500&q=70" alt="Fresh fruit smoothie in a glass"></div>
+          <div class="body"><div class="row"><h4>Smoothies</h4><span class="price">£4.10</span></div><p>Blended fresh fruit, no shortcuts, made to order.</p></div>
+        </div>
+        <div class="menu-card">
+          <div class="thumb"><img loading="lazy" src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=500&q=70" alt="Toasted sandwich cut in half"></div>
+          <div class="body"><div class="row"><h4>Sandwiches</h4><span class="price">£4.80</span></div><p>Toasted or fresh, filled with deli favourites.</p></div>
+        </div>
+        <div class="menu-card">
+          <div class="thumb"><img loading="lazy" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=70" alt="Assorted Italian pastries in a display case"></div>
+          <div class="body"><div class="row"><h4>Bakery</h4><span class="price">£2.60</span></div><p>Croissants, cornetti and daily-baked treats.</p></div>
+        </div>
+        <div class="menu-card">
+          <div class="thumb"><img loading="lazy" src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=500&q=70" alt="Slice of layered dessert cake"></div>
+          <div class="body"><div class="row"><h4>Desserts</h4><span class="price">£3.90</span></div><p>Tiramisu, cannoli and other Italian classics.</p></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:44px;">
+        <a href="#menu" class="btn btn-ghost" data-nav="menu">See Full Café Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SPECIAL OFFERS ============ -->
+  <section class="section" id="offers">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Special Offers</p>
+        <h2>This month at Watney Café Italia</h2>
+      </div>
+      <div class="offers-grid reveal-stagger">
+        <div class="offer-card big">
+          <p class="offer-tag">Loyalty Offer</p>
+          <h3>Buy 5 coffees, get your 6th free</h3>
+          <p>Ask a team member to start your loyalty card on your next visit.</p>
+        </div>
+        <div class="offer-card small">
+          <p class="offer-tag">Morning Deal</p>
+          <h3>Coffee + pastry from £4.50</h3>
+          <p>Available every day, 8am–11am.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section section-alt" id="testimonials">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow" style="justify-content:center">Testimonials</p>
+        <h2>Loved by our neighbours</h2>
+      </div>
+      <div class="testi-track reveal-stagger">
+        <div class="testi-card">
+          <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <span class="quote-mark">“</span>
+          <p>My daily stop before work — the espresso is properly strong and the staff remember my order every time.</p>
+          <div class="testi-person"><img loading="lazy" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=70" alt="Portrait of customer Amara O."><div><div class="name">Amara O.</div><div class="role">Local Resident</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <span class="quote-mark">“</span>
+          <p>Half the reason I moved onto this street — groceries and a proper Italian coffee in one place, open late too.</p>
+          <div class="testi-person"><img loading="lazy" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=70" alt="Portrait of customer Daniel R."><div><div class="name">Daniel R.</div><div class="role">Regular Customer</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <span class="quote-mark">“</span>
+          <p>Booked their small events corner for a birthday — warm, personal service and the tiramisu was outstanding.</p>
+          <div class="testi-person"><img loading="lazy" src="https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?auto=format&fit=crop&w=100&q=70" alt="Portrait of customer Priya S."><div><div class="name">Priya S.</div><div class="role">Event Booking</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY PREVIEW ============ -->
+  <section class="section" id="gallery-preview">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Gallery</p>
+        <h2>Inside Watney Café Italia</h2>
+      </div>
+      <div class="cat-grid reveal-stagger" style="grid-template-columns:repeat(4,1fr);">
+        <div class="cat-card" style="aspect-ratio:1/1;"><img loading="lazy" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=500&q=70" alt="Coffee beans close up"></div>
+        <div class="cat-card" style="aspect-ratio:1/1;"><img loading="lazy" src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=500&q=70" alt="Interior seating area of the café"></div>
+        <div class="cat-card" style="aspect-ratio:1/1;"><img loading="lazy" src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&w=500&q=70" alt="Pastry display counter"></div>
+        <div class="cat-card" style="aspect-ratio:1/1;"><img loading="lazy" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=500&q=70" alt="Barista preparing coffee"></div>
+      </div>
+      <div style="text-align:center;margin-top:44px;">
+        <a href="#gallery" class="btn btn-ghost" data-nav="gallery">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="section" id="newsletter-section" style="padding-top:0;">
+    <div class="container">
+      <div class="newsletter reveal">
+        <div>
+          <h3>Get offers straight to your inbox</h3>
+          <p>One email a month. No spam, just good coffee news.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <label for="newsletterEmail" class="visually-hidden">Email address</label>
+          <input type="email" id="newsletterEmail" name="email" placeholder="you@example.com" required autocomplete="email">
+          <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+        </form>
+      </div>
+      <p class="form-status" id="newsletterStatus" role="status"></p>
+    </div>
+  </section>
+
+  <!-- ============ INSTAGRAM PLACEHOLDER ============ -->
+  <section class="section section-alt" id="instagram">
+    <div class="container">
+      <div class="section-head center reveal">
+        <p class="eyebrow" style="justify-content:center">Follow Along</p>
+        <h2>@watneycafeitalia</h2>
+      </div>
+      <div class="insta-grid reveal-stagger">
+        <div class="insta-item"><img loading="lazy" src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=300&q=60" alt="Instagram post: latte art"></div>
+        <div class="insta-item"><img loading="lazy" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=300&q=60" alt="Instagram post: bakery items"></div>
+        <div class="insta-item"><img loading="lazy" src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?auto=format&fit=crop&w=300&q=60" alt="Instagram post: coffee beans"></div>
+        <div class="insta-item"><img loading="lazy" src="https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=300&q=60" alt="Instagram post: espresso pour"></div>
+        <div class="insta-item"><img loading="lazy" src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=300&q=60" alt="Instagram post: café interior"></div>
+        <div class="insta-item"><img loading="lazy" src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=300&q=60" alt="Instagram post: cappuccino"></div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /#home -->
+
+<!-- ================================================================
+     PAGE: SHOP
+     ================================================================ -->
+<div class="page" id="shop">
+  <div class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home" data-nav="home">Home</a><span aria-hidden="true">/</span><span aria-current="page">Shop</span></nav>
+      <h1>Shop the Grocery Store</h1>
+      <p>Everyday essentials, bakery, drinks and gifts — search or filter by category.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="shop-toolbar">
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
+          <label for="productSearch" class="visually-hidden">Search products</label>
+          <input type="search" id="productSearch" placeholder="Search products…" autocomplete="off">
+        </div>
+        <div class="chip-row" id="shopFilters" role="group" aria-label="Filter by category">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="Snacks">Snacks</button>
+          <button class="chip" data-filter="Cold Drinks">Cold Drinks</button>
+          <button class="chip" data-filter="Groceries">Groceries</button>
+          <button class="chip" data-filter="Bakery">Bakery</button>
+          <button class="chip" data-filter="Electronics">Electronics</button>
+          <button class="chip" data-filter="Mobile Accessories">Mobile Accessories</button>
+          <button class="chip" data-filter="Gift Items">Gift Items</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE: CAFÉ MENU
+     ================================================================ -->
+<div class="page" id="menu">
+  <div class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home" data-nav="home">Home</a><span aria-hidden="true">/</span><span aria-current="page">Café Menu</span></nav>
+      <h1>Café Menu</h1>
+      <p>Espresso, tea, breakfast and bakery — made fresh, every order.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="menu-tabs" id="menuTabs" role="group" aria-label="Filter menu by category">
+        <button class="tab-btn active" data-cat="all">All</button>
+        <button class="tab-btn" data-cat="Espresso">Espresso</button>
+        <button class="tab-btn" data-cat="Tea">Tea</button>
+        <button class="tab-btn" data-cat="Cold Drinks">Cold Drinks &amp; Smoothies</button>
+        <button class="tab-btn" data-cat="Breakfast">Breakfast</button>
+        <button class="tab-btn" data-cat="Sandwiches">Paninis &amp; Sandwiches</button>
+        <button class="tab-btn" data-cat="Salads">Salads</button>
+        <button class="tab-btn" data-cat="Desserts">Desserts &amp; Cakes</button>
+        <button class="tab-btn" data-cat="Pastries">Pastries</button>
+      </div>
+      <div class="menu-grid" id="fullMenuGrid" aria-live="polite"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE: GALLERY
+     ================================================================ -->
+<div class="page" id="gallery">
+  <div class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home" data-nav="home">Home</a><span aria-hidden="true">/</span><span aria-current="page">Gallery</span></nav>
+      <h1>Gallery</h1>
+      <p>A look inside our café and store.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="gallery-filters" id="galleryFilters" role="group" aria-label="Filter gallery">
+        <button class="chip active" data-gfilter="all">All</button>
+        <button class="chip" data-gfilter="Café">Café</button>
+        <button class="chip" data-gfilter="Food">Food</button>
+        <button class="chip" data-gfilter="Store">Store</button>
+        <button class="chip" data-gfilter="Team">Team</button>
+      </div>
+      <div class="masonry" id="masonryGrid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE: BLOG
+     ================================================================ -->
+<div class="page" id="blog">
+  <div class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home" data-nav="home">Home</a><span aria-hidden="true">/</span><span aria-current="page">Blog</span></nav>
+      <h1>Journal</h1>
+      <p>Stories about coffee, bakery and life on Tarling Street.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="blog-grid" id="blogGrid"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE: CAREERS
+     ================================================================ -->
+<div class="page" id="careers">
+  <div class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home" data-nav="home">Home</a><span aria-hidden="true">/</span><span aria-current="page">Careers</span></nav>
+      <h1>Join Our Team</h1>
+      <p>We're always glad to meet friendly, reliable people who care about good coffee and good service.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="jobs-grid">
+        <div class="job-card"><div><h3>Barista</h3><div class="job-meta"><span>Part-time</span><span>Shifts</span><span>London E1</span></div></div><a href="#careers-form" class="btn btn-sm btn-ghost">Apply</a></div>
+        <div class="job-card"><div><h3>Kitchen Assistant</h3><div class="job-meta"><span>Part-time</span><span>Shifts</span><span>London E1</span></div></div><a href="#careers-form" class="btn btn-sm btn-ghost">Apply</a></div>
+        <div class="job-card"><div><h3>Cashier</h3><div class="job-meta"><span>Full-time</span><span>Shifts</span><span>London E1</span></div></div><a href="#careers-form" class="btn btn-sm btn-ghost">Apply</a></div>
+        <div class="job-card"><div><h3>Store Assistant</h3><div class="job-meta"><span>Full-time</span><span>Shifts</span><span>London E1</span></div></div><a href="#careers-form" class="btn btn-sm btn-ghost">Apply</a></div>
+      </div>
+
+      <div id="careers-form" class="form-card reveal">
+        <h2 style="font-size:1.6rem;margin-bottom:6px;">Application Form</h2>
+        <p style="color:var(--text-muted);margin-bottom:26px;">Tell us a little about yourself — we'll be in touch.</p>
+        <form id="careerForm" novalidate>
+          <div class="form-grid">
+            <div class="form-field"><label for="cName">Full name</label><input type="text" id="cName" name="name" required autocomplete="name"></div>
+            <div class="form-field"><label for="cEmail">Email</label><input type="email" id="cEmail" name="email" required autocomplete="email"></div>
+            <div class="form-field"><label for="cPhone">Phone</label><input type="tel" id="cPhone" name="phone" required autocomplete="tel"></div>
+            <div class="form-field">
+              <label for="cRole">Position applying for</label>
+              <select id="cRole" name="role" required>
+                <option value="">Select a role</option>
+                <option>Barista</option>
+                <option>Kitchen Assistant</option>
+                <option>Cashier</option>
+                <option>Store Assistant</option>
+              </select>
+            </div>
+            <div class="form-field full"><label for="cMessage">Tell us about yourself</label><textarea id="cMessage" name="message" required></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top:22px;">Submit Application</button>
+          <p class="form-status" id="careerStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE: FAQ
+     ================================================================ -->
+<div class="page" id="faq">
+  <div class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home" data-nav="home">Home</a><span aria-hidden="true">/</span><span aria-current="page">FAQ</span></nav>
+      <h1>Frequently Asked Questions</h1>
+      <p>Everything you might want to know before visiting.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="faq-list" id="faqList"></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================================================================
+     PAGE: CONTACT
+     ================================================================ -->
+<div class="page" id="contact">
+  <div class="page-header">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#home" data-nav="home">Home</a><span aria-hidden="true">/</span><span aria-current="page">Contact</span></nav>
+      <h1>Get In Touch</h1>
+      <p>Questions, event bookings or franchise enquiries — we'd love to hear from you.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="contact-info-card reveal">
+        <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><div class="t">Address</div><div class="v">16 Tarling Street, London E1 0AD, United Kingdom</div></div></div>
+        <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.11 4.18 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.72c.13.99.36 1.96.68 2.9a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.18-1.18a2 2 0 0 1 2.11-.45c.94.32 1.91.55 2.9.68A2 2 0 0 1 22 16.92z"/></svg><div><div class="t">Phone</div><div class="v"><a href="tel:+447387190391">+44 7387 190391</a></div></div></div>
+        <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div class="t">Email</div><div class="v"><a href="mailto:watneycaffeitalia@yahoo.com">watneycaffeitalia@yahoo.com</a></div></div></div>
+        <div class="contact-row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg><div><div class="t">Hours</div><div class="v">Mon – Sun, 8:00 AM – 11:00 PM</div></div></div>
+
+        <div class="map-embed" role="img" aria-label="Map placeholder showing location of Watney Café Italia at 16 Tarling Street, London E1 0AD">
+          <div class="pin">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Map — 16 Tarling Street, E1 0AD</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card reveal" style="margin:0;">
+        <h2 style="font-size:1.5rem;margin-bottom:6px;">Send Us a Message</h2>
+        <p style="color:var(--text-muted);margin-bottom:26px;">For event bookings, franchise enquiries or general questions.</p>
+        <form id="contactForm" novalidate>
+          <div class="form-grid">
+            <div class="form-field"><label for="ctName">Full name</label><input type="text" id="ctName" name="name" required autocomplete="name"></div>
+            <div class="form-field"><label for="ctEmail">Email</label><input type="email" id="ctEmail" name="email" required autocomplete="email"></div>
+            <div class="form-field"><label for="ctPhone">Phone</label><input type="tel" id="ctPhone" name="phone" autocomplete="tel"></div>
+            <div class="form-field">
+              <label for="ctSubject">Enquiry type</label>
+              <select id="ctSubject" name="subject" required>
+                <option value="">Select an option</option>
+                <option>General Enquiry</option>
+                <option>Event Booking</option>
+                <option>Franchise Enquiry</option>
+                <option>Feedback</option>
+              </select>
+            </div>
+            <div class="form-field full"><label for="ctMessage">Message</label><textarea id="ctMessage" name="message" required></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top:22px;">Send Message</button>
+          <p class="form-status" id="contactStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 9h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M3 21h15" stroke-linecap="round"/></svg>
+          Watney Café Italia
+        </div>
+        <p>Italian café and grocery store on Tarling Street, serving fresh coffee and everyday essentials to the E1 community.</p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 9h3V6h-3a4 4 0 0 0-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2a1 1 0 0 1 1-1z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home" data-nav="home">Home</a></li>
+          <li><a href="#about" data-nav="home">About</a></li>
+          <li><a href="#shop" data-nav="shop">Shop</a></li>
+          <li><a href="#menu" data-nav="menu">Café Menu</a></li>
+          <li><a href="#gallery" data-nav="gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#blog" data-nav="blog">Blog</a></li>
+          <li><a href="#careers" data-nav="careers">Careers</a></li>
+          <li><a href="#faq" data-nav="faq">FAQ</a></li>
+          <li><a href="#contact" data-nav="contact">Franchise Enquiries</a></li>
+          <li><a href="#contact" data-nav="contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <ul>
+          <li>16 Tarling Street, London E1 0AD</li>
+          <li><a href="tel:+447387190391">+44 7387 190391</a></li>
+          <li><a href="mailto:watneycaffeitalia@yahoo.com">watneycaffeitalia@yahoo.com</a></li>
+          <li>Mon – Sun, 8:00 AM – 11:00 PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Rezuan || Watney Café Italia. All rights reserved.</span>
+      <span><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12" stroke-linecap="round"/></svg>
+  </button>
+  <button class="lightbox-nav lb-prev" id="lbPrev" aria-label="Previous image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <img id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lb-next" id="lbNext" aria-label="Next image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</div>
+
+<!-- ============ FLOATING BUTTONS ============ -->
+<div class="floating-btns">
+  <button class="fab fab-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <a class="fab fab-whatsapp" href="https://wa.me/447387190391" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2zm5.8 14.13c-.24.68-1.4 1.3-1.94 1.38-.5.08-1.12.11-1.81-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.11 1.01-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.15.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.13.63-.08.17-.21.72-.84.92-1.13.19-.29.38-.24.64-.14.26.1 1.67.79 1.95.93.29.15.48.22.55.34.07.13.07.72-.17 1.4z"/></svg>
+  </a>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+/* ============ YEAR ============ */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ============ LOADER ============ */
+window.addEventListener('load', function(){
+  setTimeout(function(){
+    document.getElementById('loader').classList.add('hidden');
+  }, 500);
+});
+
+/* ============ THEME TOGGLE ============ */
+var body = document.body;
+var themeToggle = document.getElementById('themeToggle');
+var savedTheme = null;
+try{ savedTheme = null; }catch(e){}
+var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+if(prefersDark){ body.setAttribute('data-theme','dark'); themeToggle.setAttribute('aria-pressed','true'); }
+themeToggle.addEventListener('click', function(){
+  var isDark = body.getAttribute('data-theme') === 'dark';
+  body.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  themeToggle.setAttribute('aria-pressed', String(!isDark));
+});
+
+/* ============ MOBILE NAV ============ */
+var navToggle = document.getElementById('navToggle');
+var navLinks = document.getElementById('navLinks');
+navToggle.addEventListener('click', function(){
+  var open = navLinks.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', String(open));
+});
+navLinks.querySelectorAll('a').forEach(function(a){
+  a.addEventListener('click', function(){
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded','false');
+  });
+});
+
+/* ============ NAVBAR SCROLL STATE ============ */
+var navbar = document.getElementById('navbar');
+var backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', function(){
+  var y = window.scrollY;
+  navbar.classList.toggle('scrolled', y > 40);
+  backToTop.classList.toggle('show', y > 500);
+}, {passive:true});
+backToTop.addEventListener('click', function(){
+  window.scrollTo({top:0, behavior:'smooth'});
+});
+
+/* ============ SPA PAGE ROUTING ============ */
+var pages = document.querySelectorAll('.page');
+function showPage(id){
+  pages.forEach(function(p){ p.classList.toggle('active', p.id === id); });
+  document.querySelectorAll('.nav-links a').forEach(function(a){
+    a.classList.toggle('active', a.dataset.nav === id);
+  });
+}
+document.querySelectorAll('[data-nav]').forEach(function(el){
+  el.addEventListener('click', function(){
+    var target = el.dataset.nav;
+    setTimeout(function(){ showPage(target); }, 10);
+  });
+});
+window.addEventListener('hashchange', function(){
+  var hash = location.hash.replace('#','');
+  var known = ['home','shop','menu','gallery','blog','careers','faq','contact'];
+  if(known.indexOf(hash) > -1){ showPage(hash); }
+});
+(function initRoute(){
+  var hash = location.hash.replace('#','');
+  var map = {about:'home', testimonials:'home', 'gallery-preview':'home'};
+  var known = ['home','shop','menu','gallery','blog','careers','faq','contact'];
+  if(known.indexOf(hash) > -1){ showPage(hash); }
+  else if(map[hash]){ showPage(map[hash]); }
+})();
+
+/* ============ SCROLL REVEAL ============ */
+var revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(entry.isIntersecting){
+      entry.target.classList.add('in');
+      io.unobserve(entry.target);
+    }
+  });
+}, {threshold:0.15});
+revealEls.forEach(function(el){ io.observe(el); });
+
+/* ============ ANIMATED COUNTERS ============ */
+var counters = document.querySelectorAll('[data-count]');
+var counterIO = new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if(!entry.isIntersecting) return;
+    var el = entry.target;
+    var target = parseInt(el.dataset.count, 10);
+    var dur = 1600, start = null;
+    function step(ts){
+      if(!start) start = ts;
+      var progress = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(eased * target).toLocaleString();
+      if(progress < 1) requestAnimationFrame(step);
+      else el.textContent = target.toLocaleString();
+    }
+    requestAnimationFrame(step);
+    counterIO.unobserve(el);
+  });
+}, {threshold:0.4});
+counters.forEach(function(el){ counterIO.observe(el); });
+
+/* ============ DATA: PRODUCTS ============ */
+var products = [
+  {name:"Italian Roast Coffee Beans", cat:"Groceries", price:"£7.50", img:"https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=500&q=70", desc:"Whole bean, medium-dark roast, 250g bag."},
+  {name:"Sparkling San Pellegrino", cat:"Cold Drinks", price:"£1.20", img:"https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=70", desc:"Classic Italian sparkling water, 330ml."},
+  {name:"Crusty Sourdough Loaf", cat:"Bakery", price:"£3.10", img:"https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=70", desc:"Baked fresh every morning in-store."},
+  {name:"Sea Salt Crisps", cat:"Snacks", price:"£1.10", img:"https://images.unsplash.com/photo-1599490659213-e2b9527bd087?auto=format&fit=crop&w=500&q=70", desc:"Hand-cooked, lightly salted, 150g."},
+  {name:"USB-C Fast Charger", cat:"Electronics", price:"£9.99", img:"https://images.unsplash.com/photo-1585155770447-2f66e2a397b5?auto=format&fit=crop&w=500&q=70", desc:"20W fast charging wall adapter."},
+  {name:"Phone Case &amp; Screen Protector", cat:"Mobile Accessories", price:"£6.50", img:"https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?auto=format&fit=crop&w=500&q=70", desc:"Universal fit protective bundle."},
+  {name:"Gift Wrapped Chocolate Box", cat:"Gift Items", price:"£8.00", img:"https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=500&q=70", desc:"A ready-to-give box of Italian chocolates."},
+  {name:"Extra Virgin Olive Oil", cat:"Groceries", price:"£6.20", img:"https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=500&q=70", desc:"Cold-pressed, 500ml bottle."},
+  {name:"Fresh Orange Juice", cat:"Cold Drinks", price:"£2.30", img:"https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=500&q=70", desc:"Freshly squeezed, chilled, 500ml."},
+  {name:"Chocolate Cornetto", cat:"Bakery", price:"£2.20", img:"https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=500&q=70", desc:"Flaky Italian pastry, chocolate-filled."},
+  {name:"Mixed Nuts Pack", cat:"Snacks", price:"£2.40", img:"https://images.unsplash.com/photo-1508061253366-f7da158b6d46?auto=format&fit=crop&w=500&q=70", desc:"Roasted and lightly salted, 100g."},
+  {name:"Bluetooth Earbuds", cat:"Electronics", price:"£14.99", img:"https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=500&q=70", desc:"Wireless earbuds with charging case."},
+  {name:"Phone Charging Cable", cat:"Mobile Accessories", price:"£3.99", img:"https://images.unsplash.com/photo-1601524909162-ae8725290836?auto=format&fit=crop&w=500&q=70", desc:"1.5m durable braided cable."},
+  {name:"Greeting Card Selection", cat:"Gift Items", price:"£2.00", img:"https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=500&q=70", desc:"Handpicked cards for every occasion."},
+  {name:"Semi-Skimmed Milk", cat:"Groceries", price:"£1.30", img:"https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=500&q=70", desc:"1 litre, locally sourced dairy."},
+  {name:"Iced Tea Bottle", cat:"Cold Drinks", price:"£1.60", img:"https://images.unsplash.com/photo-1499638673689-79a0b5115d87?auto=format&fit=crop&w=500&q=70", desc:"Lemon-flavoured, 500ml bottle."}
+];
+var productGrid = document.getElementById('productGrid');
+var activeFilter = 'all', searchTerm = '';
+function renderProducts(){
+  var filtered = products.filter(function(p){
+    var matchesCat = activeFilter === 'all' || p.cat === activeFilter;
+    var matchesSearch = p.name.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
+    return matchesCat && matchesSearch;
+  });
+  if(filtered.length === 0){
+    productGrid.innerHTML = '<p class="no-results">No products match your search. Try a different term or category.</p>';
+    return;
+  }
+  productGrid.innerHTML = filtered.map(function(p){
+    return '<div class="product-card"><div class="thumb"><img loading="lazy" src="'+p.img+'" alt="'+p.name+'"></div><div class="body"><span class="product-cat">'+p.cat+'</span><h4>'+p.name+'</h4><p>'+p.desc+'</p><span class="product-price">'+p.price+'</span></div></div>';
+  }).join('');
+}
+document.getElementById('shopFilters').addEventListener('click', function(e){
+  var btn = e.target.closest('.chip');
+  if(!btn) return;
+  document.querySelectorAll('#shopFilters .chip').forEach(function(c){ c.classList.remove('active'); });
+  btn.classList.add('active');
+  activeFilter = btn.dataset.filter;
+  renderProducts();
+});
+document.getElementById('productSearch').addEventListener('input', function(e){
+  searchTerm = e.target.value;
+  renderProducts();
+});
+renderProducts();
+
+/* ============ DATA: CAFÉ MENU (FULL) ============ */
+var menuItems = [
+  {name:"Espresso", cat:"Espresso", price:"£2.40", img:"https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=500&q=70", desc:"Rich, intense, pulled to order."},
+  {name:"Doppio", cat:"Espresso", price:"£3.00", img:"https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=500&q=70", desc:"A double shot for a bolder start."},
+  {name:"Cappuccino", cat:"Espresso", price:"£3.20", img:"https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=500&q=70", desc:"Espresso, steamed milk, silky microfoam."},
+  {name:"Caffè Latte", cat:"Espresso", price:"£3.40", img:"https://images.unsplash.com/photo-1561047029-3000c68339ca?auto=format&fit=crop&w=500&q=70", desc:"Smooth and creamy, our everyday favourite."},
+  {name:"Americano", cat:"Espresso", price:"£2.80", img:"https://images.unsplash.com/photo-1524350876685-274059332603?auto=format&fit=crop&w=500&q=70", desc:"Espresso lengthened with hot water."},
+  {name:"Mocha", cat:"Espresso", price:"£3.60", img:"https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=500&q=70", desc:"Espresso, milk and Italian dark chocolate."},
+  {name:"English Breakfast Tea", cat:"Tea", price:"£2.20", img:"https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=500&q=70", desc:"A classic, brewed strong."},
+  {name:"Green Tea", cat:"Tea", price:"£2.20", img:"https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=500&q=70", desc:"Light and delicate, served hot."},
+  {name:"Hot Chocolate", cat:"Tea", price:"£3.10", img:"https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=500&q=70", desc:"Rich Italian chocolate, topped with cream."},
+  {name:"Iced Coffee", cat:"Cold Drinks", price:"£3.50", img:"https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=500&q=70", desc:"Chilled espresso over ice, silky milk."},
+  {name:"Berry Smoothie", cat:"Cold Drinks", price:"£4.10", img:"https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=500&q=70", desc:"Blended fresh berries, no shortcuts."},
+  {name:"Mango Smoothie", cat:"Cold Drinks", price:"£4.10", img:"https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=500&q=70", desc:"Tropical mango blended fresh to order."},
+  {name:"Full English Breakfast", cat:"Breakfast", price:"£7.90", img:"https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=500&q=70", desc:"Eggs, bacon, beans, toast and more."},
+  {name:"Avocado Toast", cat:"Breakfast", price:"£5.60", img:"https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=500&q=70", desc:"Smashed avocado on sourdough."},
+  {name:"Granola &amp; Yoghurt", cat:"Breakfast", price:"£4.30", img:"https://images.unsplash.com/photo-1517093157656-b9eccef91cb1?auto=format&fit=crop&w=500&q=70", desc:"House granola, honey and fresh berries."},
+  {name:"Prosciutto Panini", cat:"Sandwiches", price:"£5.20", img:"https://images.unsplash.com/photo-1481070555726-e2fe8357725c?auto=format&fit=crop&w=500&q=70", desc:"Prosciutto, mozzarella, pressed and toasted."},
+  {name:"Caprese Panini", cat:"Sandwiches", price:"£4.90", img:"https://images.unsplash.com/photo-1481070414801-51fd732d7184?auto=format&fit=crop&w=500&q=70", desc:"Tomato, mozzarella, basil, olive oil."},
+  {name:"Club Sandwich", cat:"Sandwiches", price:"£5.40", img:"https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=500&q=70", desc:"Triple-decker classic, freshly filled."},
+  {name:"Caesar Salad", cat:"Salads", price:"£5.80", img:"https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&w=500&q=70", desc:"Crisp romaine, parmesan, house dressing."},
+  {name:"Mediterranean Salad", cat:"Salads", price:"£5.60", img:"https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=70", desc:"Olives, feta, tomato, cucumber, herbs."},
+  {name:"Tiramisu", cat:"Desserts", price:"£3.90", img:"https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=500&q=70", desc:"Classic mascarpone and espresso layers."},
+  {name:"Cannoli", cat:"Desserts", price:"£3.20", img:"https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=500&q=70", desc:"Crisp shell, sweet ricotta filling."},
+  {name:"Chocolate Cake Slice", cat:"Desserts", price:"£3.70", img:"https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=70", desc:"Rich layered chocolate sponge."},
+  {name:"Cornetto", cat:"Pastries", price:"£2.20", img:"https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=500&q=70", desc:"Italian croissant, plain or filled."},
+  {name:"Almond Croissant", cat:"Pastries", price:"£2.80", img:"https://images.unsplash.com/photo-1600617219003-c46953f9f8c9?auto=format&fit=crop&w=500&q=70", desc:"Flaky pastry, almond cream filling."},
+  {name:"Sfogliatella", cat:"Pastries", price:"£2.90", img:"https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=70", desc:"Layered shell pastry with citrus ricotta."}
+];
+var fullMenuGrid = document.getElementById('fullMenuGrid');
+function renderMenu(cat){
+  var filtered = cat === 'all' ? menuItems : menuItems.filter(function(m){ return m.cat === cat; });
+  fullMenuGrid.innerHTML = filtered.map(function(m){
+    return '<div class="menu-card"><div class="thumb"><img loading="lazy" src="'+m.img+'" alt="'+m.name+'"></div><div class="body"><div class="row"><h4>'+m.name+'</h4><span class="price">'+m.price+'</span></div><p>'+m.desc+'</p></div></div>';
+  }).join('');
+}
+document.getElementById('menuTabs').addEventListener('click', function(e){
+  var btn = e.target.closest('.tab-btn');
+  if(!btn) return;
+  document.querySelectorAll('#menuTabs .tab-btn').forEach(function(t){ t.classList.remove('active'); });
+  btn.classList.add('active');
+  renderMenu(btn.dataset.cat);
+});
+renderMenu('all');
+
+/* ============ DATA: GALLERY (MASONRY) ============ */
+var galleryImgs = [
+  {src:"https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=75", cat:"Café", alt:"Coffee beans close up", h:1},
+  {src:"https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=600&q=75", cat:"Café", alt:"Café interior seating", h:1.3},
+  {src:"https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&w=600&q=75", cat:"Store", alt:"Pastry display counter", h:1.1},
+  {src:"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=75", cat:"Team", alt:"Barista preparing coffee", h:1.4},
+  {src:"https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=75", cat:"Food", alt:"Fresh baked pastries", h:1.2},
+  {src:"https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=600&q=75", cat:"Food", alt:"Cappuccino with latte art", h:1},
+  {src:"https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?auto=format&fit=crop&w=600&q=75", cat:"Café", alt:"Coffee cup on wooden table", h:1.35},
+  {src:"https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=600&q=75", cat:"Store", alt:"Store shelving with products", h:1.15},
+  {src:"https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=600&q=75", cat:"Food", alt:"Latte art detail", h:1.25},
+  {src:"https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=600&q=75", cat:"Food", alt:"Fresh berry smoothie", h:1.05},
+  {src:"https://images.unsplash.com/photo-1522992319-0365e5f11656?auto=format&fit=crop&w=600&q=75", cat:"Team", alt:"Team member serving a customer", h:1.3},
+  {src:"https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=600&q=75", cat:"Store", alt:"Fresh orange juice bottles", h:1.1}
+];
+var masonryGrid = document.getElementById('masonryGrid');
+var currentGalleryFiltered = galleryImgs.slice();
+function renderGallery(cat){
+  currentGalleryFiltered = cat === 'all' ? galleryImgs.slice() : galleryImgs.filter(function(g){ return g.cat === cat; });
+  masonryGrid.innerHTML = currentGalleryFiltered.map(function(g, i){
+    return '<div class="masonry-item" data-index="'+i+'" tabindex="0" role="button" aria-label="View larger image: '+g.alt+'"><img loading="lazy" src="'+g.src+'" alt="'+g.alt+'"><div class="mi-overlay"><span>'+g.cat+'</span></div></div>';
+  }).join('');
+}
+document.getElementById('galleryFilters').addEventListener('click', function(e){
+  var btn = e.target.closest('.chip');
+  if(!btn) return;
+  document.querySelectorAll('#galleryFilters .chip').forEach(function(c){ c.classList.remove('active'); });
+  btn.classList.add('active');
+  renderGallery(btn.dataset.gfilter);
+});
+renderGallery('all');
+
+/* ============ LIGHTBOX ============ */
+var lightbox = document.getElementById('lightbox');
+var lightboxImg = document.getElementById('lightboxImg');
+var lbIndex = 0;
+function openLightbox(i){
+  lbIndex = i;
+  var item = currentGalleryFiltered[i];
+  lightboxImg.src = item.src.replace('w=600','w=1200');
+  lightboxImg.alt = item.alt;
+  lightbox.classList.add('open');
+  document.getElementById('lightboxClose').focus();
+}
+function closeLightbox(){ lightbox.classList.remove('open'); }
+masonryGrid.addEventListener('click', function(e){
+  var item = e.target.closest('.masonry-item');
+  if(!item) return;
+  openLightbox(parseInt(item.dataset.index, 10));
+});
+masonryGrid.addEventListener('keydown', function(e){
+  if(e.key !== 'Enter' && e.key !== ' ') return;
+  var item = e.target.closest('.masonry-item');
+  if(!item) return;
+  e.preventDefault();
+  openLightbox(parseInt(item.dataset.index, 10));
+});
+document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+document.getElementById('lbPrev').addEventListener('click', function(){ openLightbox((lbIndex - 1 + currentGalleryFiltered.length) % currentGalleryFiltered.length); });
+document.getElementById('lbNext').addEventListener('click', function(){ openLightbox((lbIndex + 1) % currentGalleryFiltered.length); });
+lightbox.addEventListener('click', function(e){ if(e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', function(e){
+  if(!lightbox.classList.contains('open')) return;
+  if(e.key === 'Escape') closeLightbox();
+  if(e.key === 'ArrowLeft') openLightbox((lbIndex - 1 + currentGalleryFiltered.length) % currentGalleryFiltered.length);
+  if(e.key === 'ArrowRight') openLightbox((lbIndex + 1) % currentGalleryFiltered.length);
+});
+
+/* ============ DATA: BLOG ============ */
+var blogPosts = [
+  {title:"Understanding Italian Coffee Culture", cat:"Coffee Culture", img:"https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=600&q=75", excerpt:"Why Italians drink espresso standing up, and what it means for how we serve coffee here on Tarling Street."},
+  {title:"What Makes a True Italian Espresso", cat:"Italian Espresso", img:"https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=600&q=75", excerpt:"From bean to cup — the small details behind every shot we pull at the counter."},
+  {title:"Building a Healthier Breakfast Routine", cat:"Healthy Breakfast", img:"https://images.unsplash.com/photo-1517093157656-b9eccef91cb1?auto=format&fit=crop&w=600&q=75", excerpt:"Simple, balanced breakfast options from our menu to start your day right."},
+  {title:"Behind the Bakery Counter", cat:"Bakery Tips", img:"https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=75", excerpt:"How our bakers get up before dawn to have fresh cornetti ready by 8am."},
+  {title:"Supporting Our Tarling Street Community", cat:"Local Community", img:"https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=600&q=75", excerpt:"A look at how Watney Café Italia has grown alongside its E1 neighbours."},
+  {title:"New Additions to Our Grocery Shelves", cat:"New Products", img:"https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=75", excerpt:"A round-up of the newest grocery and gift items now in store."}
+];
+document.getElementById('blogGrid').innerHTML = blogPosts.map(function(b){
+  return '<article class="blog-card"><div class="thumb"><img loading="lazy" src="'+b.img+'" alt="'+b.title+'"></div><div class="body"><div class="blog-meta">'+b.cat+'</div><h3>'+b.title+'</h3><p>'+b.excerpt+'</p><a href="#" class="blog-link">Read More →</a></div></article>';
+}).join('');
+
+/* ============ DATA: FAQ ============ */
+var faqs = [
+  {q:"What are your opening hours?", a:"We're open every day of the week, including bank holidays, from 8:00 AM to 11:00 PM."},
+  {q:"Where exactly are you located?", a:"You'll find us at 16 Tarling Street, London E1 0AD — close to Shadwell and Whitechapel."},
+  {q:"Do you serve dairy-free milk options?", a:"Yes, oat and soy milk are available for any of our coffee or tea drinks at no extra charge."},
+  {q:"Can I book the café for a private event?", a:"Yes, we host small gatherings and celebrations. Get in touch through our contact form with your date and group size."},
+  {q:"Do you offer a loyalty programme?", a:"Yes — collect a stamp with every coffee and your sixth is on us. Ask a team member to start your card."},
+  {q:"Is the store wheelchair accessible?", a:"Yes, our entrance and seating area are step-free and accessible."},
+  {q:"Do you offer takeaway and delivery?", a:"Takeaway is available for everything on our menu. Delivery options are being introduced — ask in store for current availability."},
+  {q:"Are you hiring at the moment?", a:"We're always glad to hear from friendly, reliable people. Visit our Careers page to see current openings and apply."},
+  {q:"Do you sell coffee beans to take home?", a:"Yes, our house-roasted Italian coffee beans are available whole or ground, by the bag."},
+  {q:"Can I pay by card or contactless?", a:"We accept cash, card and all major contactless payment methods including Apple Pay and Google Pay."},
+  {q:"Do you cater for food allergies?", a:"Please let a team member know of any allergies before ordering — we're happy to talk through ingredients."},
+  {q:"Is there seating inside the café?", a:"Yes, we have a small seating area for enjoying your coffee and food in-store."},
+  {q:"Do you offer franchise opportunities?", a:"We're exploring franchise opportunities for the right partners. Reach out via our Contact page with 'Franchise Enquiry'."},
+  {q:"Can I order ahead for collection?", a:"Give us a call on +44 7387 190391 and we'll have your order ready when you arrive."},
+  {q:"Do you have parking nearby?", a:"There is limited on-street pay-and-display parking on Tarling Street and nearby roads."}
+];
+document.getElementById('faqList').innerHTML = faqs.map(function(f, i){
+  return '<div class="faq-item"><h3><button class="faq-q" aria-expanded="false" aria-controls="faqA'+i+'" id="faqQ'+i+'">'+f.q+'<span class="plus" aria-hidden="true"></span></button></h3><div class="faq-a" id="faqA'+i+'" role="region" aria-labelledby="faqQ'+i+'"><p>'+f.a+'</p></div></div>';
+}).join('');
+document.getElementById('faqList').addEventListener('click', function(e){
+  var btn = e.target.closest('.faq-q');
+  if(!btn) return;
+  var item = btn.closest('.faq-item');
+  var answer = item.querySelector('.faq-a');
+  var isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(openItem){
+    if(openItem !== item){
+      openItem.classList.remove('open');
+      openItem.querySelector('.faq-a').style.maxHeight = null;
+      openItem.querySelector('.faq-q').setAttribute('aria-expanded','false');
+    }
+  });
+  item.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+  answer.style.maxHeight = !isOpen ? answer.scrollHeight + 'px' : null;
+});
+
+/* ============ FORMS (front-end only, no backend wired up) ============ */
+function wireForm(formId, statusId, successMsg){
+  var form = document.getElementById(formId);
+  var status = document.getElementById(statusId);
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!form.checkValidity()){
+      form.reportValidity();
+      return;
+    }
+    status.textContent = successMsg;
+    status.style.color = 'var(--gold)';
+    status.classList.add('show');
+    form.reset();
+  });
+}
+wireForm('newsletterForm', 'newsletterStatus', 'Thanks — you\'re subscribed to our updates.');
+wireForm('careerForm', 'careerStatus', 'Thanks — your application has been received. We\'ll be in touch soon.');
+wireForm('contactForm', 'contactStatus', 'Thanks — your message has been sent. We\'ll reply as soon as we can.');
+
+})();
+</script>
+</body>
+</html>
